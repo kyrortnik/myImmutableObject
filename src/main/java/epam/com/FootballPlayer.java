@@ -14,7 +14,6 @@ public final class FootballPlayer {
     private final Club currentClub;
     private final Club[] previousClubs;
 
-
     private void checkNumber(int playerNumber){
         if (playerNumber < 0 || playerNumber > 99){
             throw new IllegalArgumentException();
