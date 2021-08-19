@@ -9,6 +9,7 @@ public class Club  {
     private int titlesWon;
     private String stadiumName;
 
+
     public Club(String name, int foundationYear, int titlesWon, String stadiumName) {
         this.name = name;
         this.foundationYear = foundationYear;
@@ -69,6 +70,16 @@ public class Club  {
         result = 31 * result + titlesWon;
         result = 31 * result + (stadiumName != null ? stadiumName.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Club{" +
+                "name='" + name + '\'' +
+                ", foundationYear=" + foundationYear +
+                ", titlesWon=" + titlesWon +
+                ", stadiumName='" + stadiumName + '\'' +
+                '}';
     }
 
 }
