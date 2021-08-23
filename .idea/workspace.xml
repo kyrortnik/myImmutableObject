@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4912d0e4-dbe8-4402-b578-f15ae868630a" name="Default Changelist" comment="changes after needed files were deleted from github" />
+    <list default="true" id="4912d0e4-dbe8-4402-b578-f15ae868630a" name="Default Changelist" comment="deepCopy methods moved from constructor to getters">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/epam/com/Club.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/epam/com/Club.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/epam/com/FootballPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/epam/com/FootballPlayer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +34,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -96,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629391361220</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="deepCopy methods moved from constructor to getters">
+      <created>1629467512718</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629467512718</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +126,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="deep cloning is added" />
     <MESSAGE value="changes after needed files were deleted from github" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes after needed files were deleted from github" />
+    <MESSAGE value="deepCopy methods moved from constructor to getters" />
+    <option name="LAST_COMMIT_MESSAGE" value="deepCopy methods moved from constructor to getters" />
   </component>
 </project>

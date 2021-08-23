@@ -17,6 +17,13 @@ public class Club  {
         this.stadiumName = stadiumName;
     }
 
+    public Club(Club club){
+        this.name = club.getName();
+        this.foundationYear = club.getFoundationYear();
+        this.titlesWon = club.getTitlesWon();
+        this.stadiumName = club.getStadiumName();
+    }
+
     public String getName() {
         return name;
     }

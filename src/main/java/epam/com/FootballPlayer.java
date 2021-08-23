@@ -38,7 +38,7 @@ public final class FootballPlayer {
     }
 
     public int[] getGoalsInPreviousSeasons() {
-        return deepCopyGoalsInPreviousSeasons(goalsInPreviousSeasons);
+        return goalsInPreviousSeasons.clone();
     }
 
     public String getName() {
@@ -54,7 +54,7 @@ public final class FootballPlayer {
     }
 
     public Club getCurrentClub() {
-        return new Club(currentClub.getName(),currentClub.getFoundationYear(),currentClub.getTitlesWon(),currentClub.getStadiumName());
+        return new Club(currentClub);
     }
 
     public Club[] getPreviousClubs() {
@@ -65,18 +65,11 @@ public final class FootballPlayer {
     private Club[] deepCopyPreviousClubs(Club[] previousClubs) {
         Club[] deepCopyOfPreviousClubs = new Club[previousClubs.length];
         for (int i = 0; i< previousClubs.length; i++){
-            deepCopyOfPreviousClubs[i] = new Club(previousClubs[i].getName(), previousClubs[i].getFoundationYear(), previousClubs[i].getTitlesWon(), previousClubs[i].getStadiumName());
+            deepCopyOfPreviousClubs[i] = new Club(previousClubs[i]);
         }
         return deepCopyOfPreviousClubs;
     }
 
-    private int[] deepCopyGoalsInPreviousSeasons(int[] goalsInPreviousSeasons){
-        int[] deepCopyOfGoalsInPreviousSeasons = new int[goalsInPreviousSeasons.length];
-        for (int i = 0;i<goalsInPreviousSeasons.length;i++){
-            deepCopyOfGoalsInPreviousSeasons[i] = goalsInPreviousSeasons[i];
-        }
-        return deepCopyOfGoalsInPreviousSeasons;
-    }
 
     @Override
     public String toString() {
